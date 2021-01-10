@@ -24,9 +24,9 @@ clc, clear, close;
 load ionosphere.mat;
 
 % Set 20% data as validation set
-ho=0.2; 
+ho = 0.2; 
 % Hold-out method
-HO=cvpartition(label,'HoldOut',ho);
+HO = cvpartition(label,'HoldOut',ho);
 
 % Parameter setting
 N        = 10; 
@@ -37,7 +37,7 @@ max_Iter = 100;
 
 % Accuracy
 Acc = jKNN(sFeat,label,HO); 
-fprintf('\n Accuracy: %g %%',Acc); fprintf('\n');
+fprintf('\n Accuracy: %g %%',Acc);
 
 % Plot convergence curve
 plot(1:max_Iter,curve); 
