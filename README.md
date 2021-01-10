@@ -16,7 +16,7 @@
 * *`feat`*     : feature vector ( Instances *x* Features )
 * *`label`*    : label vector ( Instances *x* 1 )
 * *`N`*        : number of whales
-
+* *`max_Iter`* : maximum number of iterations
 
 ## Output
 * *`sFeat`*    : selected features
