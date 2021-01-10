@@ -1,5 +1,6 @@
 # Whale Optimization Algorithm for Feature Selection
 
+[![View Whale Optimization Algorithm for Feature Selection on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/81433-whale-optimization-algorithm-for-feature-selection)
 [![License](https://img.shields.io/badge/license-BSD_3-yellow.svg)](https://github.com/JingweiToo/Whale-Optimization-Algorithm-for-Feature-Selection/blob/main/LICENSE)
 [![GitHub release](https://img.shields.io/badge/release-1.1-green.svg)](https://github.com/JingweiToo/Whale-Optimization-Algorithm-for-Feature-Selection)
 
@@ -30,9 +31,9 @@
 load ionosphere.mat;
 
 % Set 20% data as validation set
-ho=0.2; 
+ho = 0.2; 
 % Hold-out method
-HO=cvpartition(label,'HoldOut',ho);
+HO = cvpartition(label,'HoldOut',ho);
 
 % Parameter setting
 N        = 10; 
@@ -43,7 +44,7 @@ max_Iter = 100;
 
 % Accuracy
 Acc = jKNN(sFeat,label,HO); 
-fprintf('\n Accuracy: %g %%',Acc); fprintf('\n');
+fprintf('\n Accuracy: %g %%',Acc); 
 
 % Plot convergence curve
 plot(1:max_Iter,curve); 
