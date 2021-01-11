@@ -1,7 +1,7 @@
 
 function Acc = jKNN(feat,label,HO)
 %---// Parameter setting for k-value of KNN //
-k=5; 
+k = 5; 
 
 xtrain = feat(HO.training==1,:);  ytrain = label(HO.training==1); 
 xvalid = feat(HO.test==1,:);      yvalid = label(HO.test==1); 
