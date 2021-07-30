@@ -57,3 +57,15 @@ title('WOA'); grid on;
 * MATLAB 2014 or above
 * Statistics and Machine Learning Toolbox
 
+
+## Cite As
+```code
+@article{too2021spatial,
+  title={Spatial bound whale optimization algorithm: an efficient high-dimensional feature selection approach},
+  author={Too, Jingwei and Mafarja, Majdi and Mirjalili, Seyedali},
+  journal={Neural Computing and Applications},
+  pages={1--22},
+  year={2021},
+  publisher={Springer}
+}
+```
